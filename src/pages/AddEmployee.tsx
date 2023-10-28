@@ -1,5 +1,5 @@
 import React from 'react';
-import EmployeeForm from '../components/EmployeeForm';
+
 import  Employee  from '../types/Employee';
 import axios from 'axios';
 import { fetchEmployees } from '../services/EmployeeServices';
@@ -7,9 +7,11 @@ import { useNavigate } from 'react-router-dom';
 import { Grid3x3Rounded } from '@mui/icons-material';
 import { Grid } from '@mui/material';
 import Address from '../types/Address';
-import EmployeeForm4 from '../components/EmployeeForm4';
-import EmployeeForm3 from '../components/EmployeeForm3';
 
+// change the form based on the choice: Comment and uncomment the import
+import EmployeeForm3 from '../components/EmployeeForm3';
+//import EmployeeForm4 from '../components/EmployeeForm4';
+//import EmployeeForm from '../components/EmployeeForm';
 const AddEmployee: React.FC = () => {
     const initialValues: Employee = {
         id:-1,
@@ -36,7 +38,6 @@ const AddEmployee: React.FC = () => {
                 () =>navigate('/')  
             );            
         }
-            
     };
 
     return (

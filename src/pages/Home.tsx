@@ -36,7 +36,6 @@ const Home: React.FC = () => {
                     <Add />
                 </IconButton>
             </Link>Add Employee
-            
             <EmployeeList employees={employees} onDelete={handleDelete} />
         </Grid>
     );
